@@ -1,0 +1,23 @@
+public static void main(String[] args) {
+{
+String x;
+Scanner a=new Scanner(System.in);
+char ca,cb;
+int count=0,l;
+x=a.nextLine();
+for(int i=0;i<x.length();i++)
+{
+ca=x.charAt(i);
+for(int j=i+1;j<x.length();j++)
+{
+cb=x.charAt(j);
+if(ca==cb)
+{
+count=count+1;
+break;
+}
+}
+}
+l=x.length();
+System.out.println(l-count);
+}
